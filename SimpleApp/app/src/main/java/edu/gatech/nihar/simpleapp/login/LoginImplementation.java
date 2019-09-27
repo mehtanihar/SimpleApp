@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import edu.gatech.nihar.simpleapp.MainActivity;
 import edu.gatech.nihar.simpleapp.R;
+import edu.gatech.nihar.simpleapp.polls.PollsImplementation;
 import edu.gatech.nihar.simpleapp.register.RegisterImplementation;
 
 /**
@@ -58,7 +59,6 @@ public class LoginImplementation extends Activity implements LoginInterface {
             }
         });
 
-
     }
 
     @Override protected void onDestroy() {
@@ -77,7 +77,7 @@ public class LoginImplementation extends Activity implements LoginInterface {
     }
 
     @Override public void navigateToHome(String success_message) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, PollsImplementation.class);
         Toast.makeText(this,success_message,Toast.LENGTH_SHORT).show();
         startActivity(intent);
         finish();

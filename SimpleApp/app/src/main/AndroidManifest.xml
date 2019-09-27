@@ -25,6 +25,7 @@
         </activity>
 
         <activity android:name=".register.RegisterImplementation"></activity>
+        <activity android:name=".polls.PollsImplementation"></activity>
 
         <activity android:name=".MainActivity"></activity>
     </application>

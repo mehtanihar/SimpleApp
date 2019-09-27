@@ -54,11 +54,9 @@ public class User{
         return first_name;
     }
 
-
     public void setName(String first_name) {
         this.first_name = first_name;
     }
-
 
     public String getUsername() {
         return username;
